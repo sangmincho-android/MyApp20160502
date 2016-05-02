@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Database Test</string>
+    <string name="lblDBAddr">Database Address</string>
+    <string name="lblDBName">Database Name</string>
+    <string name="lblDBTable">Database Table</string>
+    <string name="lblID">Database User ID</string>
+    <string name="lblPW">Database Password</string>
+    <string name="btnOK">OK</string>
+    <string name="btnBack">BACK</string>
+</resources>
