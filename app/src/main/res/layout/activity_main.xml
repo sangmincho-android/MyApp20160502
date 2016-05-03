@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDBAddr"
-        android:text="10.0.2.2:80" />
+        android:text="10.0.2.2:80"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDBName"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,7 +49,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtDBTable" />
+        android:id="@+id/txtDBTable"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtID"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:editable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,13 +78,22 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/txtPW" />
+        android:id="@+id/txtPW"
+        android:editable="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnOK"
         android:id="@+id/btnOK"
+        android:layout_gravity="right"
+        android:onClick="clickMethod"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCipher"
+        android:id="@+id/btnCipher"
         android:layout_gravity="right"
         android:onClick="clickMethod"/>
 

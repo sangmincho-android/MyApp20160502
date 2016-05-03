@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
                 this.onClickConnectionDB();
                 break;
 
+            case R.id.btnCipher:
+                this.onClickCipher();
+                break;
+
             default:
                 break;
         }
@@ -86,6 +90,30 @@ public class MainActivity extends AppCompatActivity {
             // Intent 통하여 result를 ResultView에 전달
             Intent intent = new Intent(this, ResultView.class);
             intent.putExtra("result", sb.toString());
+
+            startActivity(intent);
+        }
+        catch (Exception ex)
+        {
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void onClickCipher()
+    {
+        try
+        {
+            EditText txtPW = (EditText) findViewById(R.id.txtPW);
+            Editable strPW = txtPW.getText();
+
+            if (strPW.length() < 1)
+            {
+                throw new Exception("값을 입력해 주십시오.");
+            }
+
+            // Intent 통하여 result를 ResultView에 전달
+            Intent intent = new Intent(this, CipherView.class);
+            intent.putExtra("password", strPW.toString());
 
             startActivity(intent);
         }

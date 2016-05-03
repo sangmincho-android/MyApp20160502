@@ -7,4 +7,5 @@
     <string name="lblPW">Database Password</string>
     <string name="btnOK">OK</string>
     <string name="btnBack">BACK</string>
+    <string name="btnCipher">CIPHER</string>
 </resources>
